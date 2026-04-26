@@ -1,9 +1,4 @@
-# P23-UT2-Gestio-avan-ada-LDAP
-Entesos — té més sentit integrar les passes **dins del flux explicatiu**, no com checklist. Et deixo el Markdown enriquit amb les instruccions **fusionades de forma natural** dins de cada activitat 👇
-
----
-
-# 🖥️ Projecte 23
+# 🖥️ P23-UT2-Gestio-avan-ada-LDAP
 
 ## Gestió avançada d’usuaris amb LDAP i monitoratge del sistema
 
@@ -275,9 +270,3 @@ Configurar → Executar → Verificar → Analitzar → Automatitzar
 
 ---
 
-Si vols, el següent nivell seria:
-
-* convertir això en **informe complet entregable**
-* o afegir-hi **respostes i captures simulades com si ho haguessis fet tu**
-
-Només digues 👍
