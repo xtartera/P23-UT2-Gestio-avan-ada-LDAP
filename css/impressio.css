@@ -1,0 +1,266 @@
+@media print{@page{size:A4 portrait;margin:12mm}html,body{background:#fff!important;color:#111827!important}body{font-size:10.5pt}.screen-only,.toolbar,.drop-actions,.focus-pill,.hero-help,.image-card button,.placeholder,.activities.locked:before{display:none!important}.print-only{display:block!important}.app{width:100%;padding:0;margin:0}.hero{height:calc(297mm - 24mm);max-height:calc(297mm - 24mm);min-height:0;margin:0!important;padding:12mm!important;display:grid;grid-template-columns:1.08fr .92fr;gap:10mm;border-radius:0;box-shadow:none;overflow:hidden;break-after:page;page-break-after:always;background:linear-gradient(135deg,rgba(8,47,99,.94),rgba(21,89,183,.88) 58%,rgba(14,165,233,.82)),url("../assets/portada-p23-print.jpg") center/cover no-repeat!important;color:#fff!important}.brand{box-shadow:none;padding:5px 8px}.brand img{width:62px;max-height:34px}.eyebrow{margin:8mm 0 2mm;font-size:8pt}.hero h1{font-size:31pt;line-height:.95;max-width:150mm}.hero-text{font-size:10.5pt;line-height:1.35;margin:5mm 0;color:rgba(255,255,255,.82)!important}.student-card{padding:7mm;border-radius:12px;box-shadow:none}.student-card h2{font-size:12pt}.student-grid{gap:4mm}.student-grid input{padding:7px;border-radius:8px}.student-card button{display:none}.hero-visual{min-height:auto;height:108mm;border-radius:16px}.visual-badge{right:7mm;bottom:7mm}.overview{height:calc(297mm - 24mm);max-height:calc(297mm - 24mm);margin:0!important;padding:14mm!important;box-shadow:none;border:1px solid #dbeafe;border-radius:0;break-after:page;page-break-after:always;overflow:hidden}.overview h2{font-size:28pt}.overview-grid{grid-template-columns:repeat(2,1fr);gap:7mm}.overview-card{break-inside:avoid;padding:8mm;border-radius:14px}.overview-card strong{font-size:24pt}.activity{margin:0!important;padding:0;box-shadow:none;border:0;border-radius:0;break-inside:auto}.activity-head{display:none}.step{position:relative;min-height:auto;break-before:page;page-break-before:always;break-inside:auto;margin:0!important;padding:18mm 0 14mm;border:0;border-radius:0;box-shadow:none;overflow:visible}.overview+.activities .activity:first-child .step:first-child{break-before:auto;page-break-before:auto}.step:before{content:"Gestió avançada d’usuaris amb LDAP · " attr(data-student);position:absolute;left:0;right:0;top:0;height:10mm;border-bottom:1px solid #cbd5e1;color:#475569;font-size:8pt;display:flex;align-items:center}.step:after{content:"Quadern digital · DataCore360 / LDAP";position:absolute;left:0;right:0;bottom:0;height:8mm;border-top:1px solid #cbd5e1;color:#64748b;font-size:8pt;display:flex;align-items:center}.step-top{padding:0 0 4mm;background:transparent;border-bottom:1px solid #dbeafe}.step-id{min-width:34px;height:34px;border-radius:9px}.step-top h3{font-size:15pt}.step-grid{display:block;padding:5mm 0 0}.step-main p{line-height:1.35;margin:2mm 0}.tasks{margin:2mm 0}.tasks li{margin:1mm 0}.snippet{margin:3mm 0;border-radius:8px;break-inside:avoid}.snippet-head{padding:2mm 3mm}.snippet pre{padding:3mm;white-space:pre-wrap}.note{padding:3mm;margin:2mm 0}.step-work{margin-top:4mm}.field-label{margin:0 0 2mm}.answer{min-height:auto;height:auto;border:1px solid #cbd5e1;border-radius:8px;padding:3mm;white-space:pre-wrap;overflow:visible;resize:none}.print-empty,.is-empty{display:none!important}.evidence-block{margin-top:4mm}.dropzone{min-height:auto;border:0;background:transparent;padding:0}.image-gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:4mm}.image-card{height:58mm;border:1px solid #cbd5e1;border-radius:8px;break-inside:avoid;page-break-inside:avoid;background:#fff}.image-card img{width:100%;height:50mm!important;max-width:100%;max-height:100%;object-fit:contain!important;object-position:center!important;background:#fff}.image-name{padding:1mm 2mm;font-size:7pt}.print-annexes{display:block!important}.evidence-annex{break-before:page;page-break-before:always;min-height:calc(297mm - 24mm);padding:14mm 0}.evidence-annex h2{font-size:18pt;margin:0 0 6mm}.annex-grid{display:grid;grid-template-columns:1fr 1fr;gap:6mm}.annex-image{height:105mm;border:1px solid #cbd5e1;border-radius:8px;padding:2mm;break-inside:avoid;background:#fff}.annex-image img{width:100%;height:95mm;max-width:100%;max-height:100%;object-fit:contain!important;object-position:center!important}.annex-image span{display:block;font-size:8pt;color:#64748b}.activity:first-child .step:first-child{break-before:auto;page-break-before:auto}}
+
+/* Ajustos v9.2 portada impresa: composició vertical editorial, logo a dalt-dreta, imatge contain i distàncies controlades. */
+@media print{
+  .hero{height:calc(297mm - 24mm)!important;max-height:calc(297mm - 24mm)!important;min-height:0!important;margin:0!important;padding:8mm 12mm 9mm!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:flex-start!important;gap:0!important;overflow:hidden!important;background:#fff!important;color:#0f172a!important;border-radius:0!important;box-shadow:none!important;break-after:page!important;page-break-after:always!important;}
+  .hero:before{display:none!important;content:none!important}
+  .hero-copy{width:100%!important;display:flex!important;flex-direction:column!important;align-items:center!important;text-align:center!important;}
+  .brand{position:relative!important;display:block!important;width:100%!important;height:30mm!important;margin:0!important;padding:0!important;background:transparent!important;color:#0f172a!important;border-radius:0!important;box-shadow:none!important;}
+  .brand img{position:absolute!important;right:0!important;top:0!important;width:44mm!important;max-height:18mm!important;object-fit:contain!important;}
+  .brand span{position:absolute!important;left:0!important;right:0!important;top:8mm!important;display:block!important;text-align:center!important;font-size:18pt!important;line-height:1!important;font-weight:900!important;letter-spacing:-.02em!important;white-space:nowrap!important;color:#075985!important;}
+  .eyebrow{display:none!important}
+  .hero h1{width:100%!important;max-width:185mm!important;margin:0!important;font-size:24pt!important;line-height:1.08!important;letter-spacing:-.035em!important;color:#0f172a!important;text-align:center!important;}
+  .hero-text{width:100%!important;max-width:170mm!important;margin:3mm 0 10mm!important;font-size:10.5pt!important;line-height:1.35!important;color:#475569!important;text-align:center!important;}
+  .hero-visual{width:100%!important;max-width:176mm!important;height:112mm!important;min-height:0!important;margin:0 auto 10mm!important;display:block!important;border:1px solid #dbeafe!important;border-radius:10px!important;box-shadow:none!important;background:#fff!important;overflow:hidden!important;}
+  .hero-visual img{display:block!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;object-position:center!important;padding:3mm!important;filter:none!important;background:#fff!important}
+  .hero-visual::before{display:none!important;content:none!important;}
+  .visual-badge{display:none!important}
+  .student-card{width:100%!important;max-width:132mm!important;margin:0 auto!important;padding:5mm 6mm!important;border:1px solid #cbd5e1!important;border-radius:10px!important;background:#f8fbff!important;color:#0f172a!important;box-shadow:none!important;text-align:left!important;}
+  .student-card h2{margin:0 0 3mm!important;color:#0f172a!important;font-size:11pt!important;line-height:1.1!important;text-align:center!important;}
+  .student-grid{display:grid!important;grid-template-columns:1fr 1fr!important;gap:4mm!important;}
+  .student-grid label{color:#334155!important;font-size:9pt!important;font-weight:800!important;text-align:left!important}
+  .student-grid input{background:#fff!important;color:#0f172a!important;border:1px solid #cbd5e1!important;border-radius:7px!important;padding:6px!important}
+  .student-card button,.hero-help{display:none!important}
+}
+
+/* v9.1: ajustos quirúrgics per evitar talls en passos llargs sense alterar la portada. */
+@media print{.step{min-height:auto!important;overflow:visible!important;break-inside:auto!important;page-break-inside:auto!important}.step-work,.step-main,.answer-block,.evidence-block{break-inside:auto;page-break-inside:auto}.snippet,.image-card{break-inside:avoid;page-break-inside:avoid}}
+
+/* v9.3: portada impresa amb la mateixa imatge real de la UI i evidències sense espai reservat innecessari. */
+@media print{
+  .image-gallery.is-single{grid-template-columns:1fr!important;max-width:150mm;margin:0 auto;}
+  .image-gallery.is-single .image-card{height:72mm!important;}
+  .image-gallery.is-single .image-card img{height:64mm!important;object-fit:contain!important;object-position:center!important;}
+  .image-gallery:empty{display:none!important;}
+}
+
+/* v9.4 · Control d'integritat en visió general i peu d'activitats */
+@media print{
+  .integrity-panel{display:block!important;margin-top:8mm!important;padding:6mm!important;border:1px solid #bfdbfe!important;border-radius:12px!important;background:#f8fbff!important;break-inside:avoid!important;page-break-inside:avoid!important;}
+  .integrity-panel h3{margin:0 0 4mm!important;color:#075985!important;font-size:13pt!important;}
+  .integrity-grid{display:grid!important;grid-template-columns:1fr 1fr!important;gap:4mm!important;}
+  .integrity-grid p{margin:0!important;padding:3mm!important;border:1px solid #dbeafe!important;border-radius:8px!important;background:#fff!important;}
+  .integrity-grid span{display:block!important;margin-bottom:1mm!important;color:#64748b!important;font-size:7.5pt!important;text-transform:uppercase!important;font-weight:800!important;letter-spacing:.04em!important;}
+  .integrity-grid strong{display:block!important;color:#0f172a!important;font-size:9pt!important;overflow-wrap:anywhere!important;}
+  .integrity-panel.integrity-alert{border-color:#fca5a5!important;background:#fff7ed!important;}
+  .integrity-panel.integrity-alert h3,.integrity-panel.integrity-alert #integrityStatus{color:#b91c1c!important;}
+  .step:after{content:attr(data-integrity-footer)!important;color:#475569!important;}
+}
+
+/* v9.7 · Millora quirúrgica de galeries en impressió: imatges més grans, separació de 5 mm i paginació flexible sense retalls. */
+@media print{
+  /* Els passos poden ocupar més d'una pàgina si les evidències ho necessiten. */
+  .step{
+    break-inside:auto!important;
+    page-break-inside:auto!important;
+    overflow:visible!important;
+  }
+
+  .step-grid,
+  .step-work,
+  .evidence-block,
+  .dropzone{
+    break-inside:auto!important;
+    page-break-inside:auto!important;
+    overflow:visible!important;
+  }
+
+  /* Galeria compacta: 0,5 cm entre imatges en horitzontal i vertical. */
+  .image-gallery{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:5mm!important;
+    align-items:start!important;
+    width:100%!important;
+    max-width:none!important;
+    margin:0!important;
+  }
+
+  /* Cada imatge és indivisible: pot passar a la pàgina següent, però no es talla. */
+  .image-card{
+    height:86mm!important;
+    min-height:86mm!important;
+    max-height:none!important;
+    padding:2mm!important;
+    break-inside:avoid!important;
+    page-break-inside:avoid!important;
+    overflow:hidden!important;
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:space-between!important;
+  }
+
+  .image-card img{
+    flex:1 1 auto!important;
+    display:block!important;
+    width:100%!important;
+    height:76mm!important;
+    max-width:100%!important;
+    max-height:76mm!important;
+    object-fit:contain!important;
+    object-position:center!important;
+    background:#fff!important;
+  }
+
+  .image-name{
+    flex:0 0 auto!important;
+    padding:1mm 0 0!important;
+    line-height:1.15!important;
+    font-size:7pt!important;
+  }
+
+  /* Una sola imatge: més gran i centrada. */
+  .image-gallery.is-single{
+    grid-template-columns:1fr!important;
+    max-width:170mm!important;
+    margin:0 auto!important;
+  }
+
+  .image-gallery.is-single .image-card{
+    height:112mm!important;
+    min-height:112mm!important;
+  }
+
+  .image-gallery.is-single .image-card img{
+    height:102mm!important;
+    max-height:102mm!important;
+  }
+
+  /* Annexos: mateix criteri de compactació i no-retall. */
+  .annex-grid{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:5mm!important;
+    align-items:start!important;
+  }
+
+  .annex-image{
+    height:125mm!important;
+    min-height:125mm!important;
+    padding:2mm!important;
+    break-inside:avoid!important;
+    page-break-inside:avoid!important;
+    overflow:hidden!important;
+  }
+
+  .annex-image img{
+    width:100%!important;
+    height:113mm!important;
+    max-width:100%!important;
+    max-height:113mm!important;
+    object-fit:contain!important;
+    object-position:center!important;
+    background:#fff!important;
+  }
+}
+
+/* v9.8 · Galeria d'evidències en columna única: imatges grans, apilades i sense retalls. */
+@media print{
+  /* El pas pot créixer naturalment i passar a més d'una pàgina. */
+  .step,
+  .step-grid,
+  .step-work,
+  .evidence-block,
+  .dropzone{
+    break-inside:auto!important;
+    page-break-inside:auto!important;
+    overflow:visible!important;
+  }
+
+  /* Les evidències visuals s'imprimeixen en columna única, una sota l'altra. */
+  .image-gallery,
+  .image-gallery.is-single{
+    display:flex!important;
+    flex-direction:column!important;
+    gap:5mm!important;
+    width:100%!important;
+    max-width:100%!important;
+    margin:0!important;
+    align-items:stretch!important;
+  }
+
+  /* Cada imatge ocupa com a màxim aproximadament el 25% de l'alçada útil A4. */
+  .image-card,
+  .image-gallery.is-single .image-card{
+    width:100%!important;
+    height:68mm!important;
+    min-height:68mm!important;
+    max-height:68mm!important;
+    padding:2mm!important;
+    border:1px solid #cbd5e1!important;
+    border-radius:8px!important;
+    background:#fff!important;
+    break-inside:avoid!important;
+    page-break-inside:avoid!important;
+    overflow:hidden!important;
+    display:flex!important;
+    flex-direction:column!important;
+  }
+
+  .image-card img,
+  .image-gallery.is-single .image-card img{
+    flex:1 1 auto!important;
+    display:block!important;
+    width:100%!important;
+    height:59mm!important;
+    max-width:100%!important;
+    max-height:59mm!important;
+    object-fit:contain!important;
+    object-position:center!important;
+    background:#fff!important;
+  }
+
+  .image-name{
+    flex:0 0 auto!important;
+    padding:1mm 0 0!important;
+    line-height:1.15!important;
+    font-size:7pt!important;
+    color:#64748b!important;
+    overflow:hidden!important;
+    text-overflow:ellipsis!important;
+    white-space:nowrap!important;
+  }
+
+  /* Els annexos també prioritzen columna única i imatges grans sense tall. */
+  .annex-grid{
+    display:flex!important;
+    flex-direction:column!important;
+    gap:5mm!important;
+    width:100%!important;
+  }
+
+  .annex-image{
+    width:100%!important;
+    height:68mm!important;
+    min-height:68mm!important;
+    max-height:68mm!important;
+    padding:2mm!important;
+    border:1px solid #cbd5e1!important;
+    border-radius:8px!important;
+    background:#fff!important;
+    break-inside:avoid!important;
+    page-break-inside:avoid!important;
+    overflow:hidden!important;
+  }
+
+  .annex-image img{
+    display:block!important;
+    width:100%!important;
+    height:57mm!important;
+    max-width:100%!important;
+    max-height:57mm!important;
+    object-fit:contain!important;
+    object-position:center!important;
+    background:#fff!important;
+  }
+
+  .annex-image span{
+    display:block!important;
+    padding-top:1mm!important;
+    font-size:7pt!important;
+    color:#64748b!important;
+    white-space:nowrap!important;
+    overflow:hidden!important;
+    text-overflow:ellipsis!important;
+  }
+}

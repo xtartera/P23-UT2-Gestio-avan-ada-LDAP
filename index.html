@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quadern digital LDAP · Gestió avançada d’usuaris</title>
+  <link rel="stylesheet" href="css/pantalla.css">
+  <link rel="stylesheet" href="css/impressio.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <section class="hero" id="portada" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <div class="brand"><img src="assets/logo.png" alt="Logo del centre"><span>Quadern digital</span></div>
+        <p class="eyebrow">Projecte educatiu · Sistemes i serveis</p>
+        <h1 id="heroTitle">Gestió avançada d’usuaris amb LDAP</h1>
+        <p class="hero-text">Un dossier interactiu per configurar, verificar, documentar i analitzar un entorn LDAP amb evidències de treball.</p>
+        <div class="student-card" id="studentCard">
+          <h2>Identificació de l’alumne</h2>
+          <div class="student-grid">
+            <label>Nom <input id="studentName" autocomplete="given-name" placeholder="Escriu el nom"></label>
+            <label>Cognoms <input id="studentSurname" autocomplete="family-name" placeholder="Escriu els cognoms"></label>
+          </div>
+          <button class="primary" id="unlockBtn" type="button">Desbloqueja el quadern</button>
+          <p class="hero-help screen-only">Completa les dades per activar l’autodesat local i començar les activitats.</p>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <img src="assets/portada.svg" alt="">
+        <div class="visual-badge"><strong>LDAP</strong><span>Configurar · Verificar · Analitzar</span></div>
+      </div>
+    </section>
+
+    <nav class="toolbar screen-only" aria-label="Eines del quadern">
+      <div class="toolbar-status"><span id="lockState" class="status-dot"></span><span id="activeStudent">Alumne no identificat</span><small id="saveState">Sense desar</small></div>
+      <div class="toolbar-actions">
+        <button id="saveBtn" type="button">Desar</button>
+        <button id="exportBtn" type="button">Exportar</button>
+        <label class="tool-file">Importar<input id="importFile" type="file" accept="application/json"></label>
+        <button id="resetBtn" class="danger" type="button">Reiniciar</button>
+        <button id="printBtn" class="primary" type="button">Imprimir</button>
+      </div>
+    </nav>
+
+    <section class="overview" id="overview" aria-labelledby="overviewTitle">
+      <div class="section-kicker">Abans de començar</div>
+      <h2 id="overviewTitle">Visió general del quadern</h2>
+      <p>Resum del dossier i de les evidències que hauràs de lliurar.</p>
+      <div class="overview-grid" id="overviewGrid"></div>
+    </section>
+
+    <main id="activities" class="activities locked" aria-live="polite"></main>
+  </div>
+
+  <div id="printAnnexes" class="print-annexes print-only"></div>
+
+  <script src="js/dades.js" defer></script>
+  <script src="js/storage.js" defer></script>
+  <script src="js/imatges.js" defer></script>
+  <script src="js/ui.js" defer></script>
+  <script src="js/impressio.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
